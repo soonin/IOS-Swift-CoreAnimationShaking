@@ -10,6 +10,7 @@ import UIKit
 
 public extension  UITextField {
 
+    
     func shake(horizantaly:CGFloat = 0  , Veticaly:CGFloat = 0) {
         let animation = CABasicAnimation(keyPath: "position")
         animation.duration = 0.05
@@ -63,9 +64,11 @@ public extension  UITextField {
         
     }
     
-    func uncustomizeTextField() {
+    func uncustomizeTextField(backGroundColor : UIColor ) {
         // change UIbutton propertie
-        self.backgroundColor = UIColor.gray
+        self.backgroundColor = backGroundColor
+        self.layer.shadowOpacity = 0.2
+        self.layer.shadowRadius = 2
         self.layer.shadowOffset = CGSize(width: 0, height: 0)
     }
     

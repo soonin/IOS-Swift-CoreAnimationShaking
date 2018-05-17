@@ -14,6 +14,11 @@ class ViewController: UIViewController , UITextFieldDelegate {
     @IBOutlet weak var provinceTextField: UITextField!
     @IBOutlet weak var countryTextField: UITextField!
     
+    let cityBGColor = (UIColor(red: 0.99573236703872681, green: 0.8809238076210022, blue: 0.97171205282211304, alpha: 1.0))
+    let provinceBGColor = (UIColor(red: 0.82944579409999997, green: 0.8460627906, blue: 1, alpha: 1.0))
+    let countryBGColor = (UIColor(red: 0.86162301740000002, green: 0.97679832229999997, blue: 0.9881622779, alpha: 1.0))
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,13 +31,13 @@ class ViewController: UIViewController , UITextFieldDelegate {
         countryTextField.tag = 300
         
         cityTextField.customizeTextField()
-        cityTextField.uncustomizeTextField()
+        cityTextField.uncustomizeTextField(backGroundColor: cityBGColor)
         
         provinceTextField.customizeTextField()
-        provinceTextField.uncustomizeTextField()
+        provinceTextField.uncustomizeTextField(backGroundColor: provinceBGColor)
         
         countryTextField.customizeTextField()
-        countryTextField.uncustomizeTextField()
+        countryTextField.uncustomizeTextField(backGroundColor: countryBGColor)
         
     }
 
@@ -54,13 +59,14 @@ class ViewController: UIViewController , UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
+        
         switch textField.tag {
         case 100:
-            cityTextField.uncustomizeTextField()
+            cityTextField.uncustomizeTextField(backGroundColor: cityBGColor)
         case 200:
-            provinceTextField.uncustomizeTextField()
+            provinceTextField.uncustomizeTextField(backGroundColor: provinceBGColor)
         case 300:
-            countryTextField.uncustomizeTextField()
+            countryTextField.uncustomizeTextField(backGroundColor: countryBGColor)
         default:
             //todo
             break
