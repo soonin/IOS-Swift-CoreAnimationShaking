@@ -12,6 +12,7 @@
 		FA96E2D120AD152100F95560 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA96E2CF20AD152100F95560 /* Main.storyboard */; };
 		FA96E2D320AD152200F95560 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA96E2D220AD152200F95560 /* Assets.xcassets */; };
 		FA96E2D620AD152200F95560 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA96E2D420AD152200F95560 /* LaunchScreen.storyboard */; };
+		FA96E2DF20AD1D9700F95560 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96E2DE20AD1D9700F95560 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FA96E2D220AD152200F95560 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA96E2D520AD152200F95560 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA96E2D720AD152200F95560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA96E2DE20AD1D9700F95560 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				FA96E2CB20AD152100F95560 /* AppDelegate.swift */,
+				FA96E2DD20AD1D6600F95560 /* Helper */,
 				FA96E2CD20AD152100F95560 /* ViewController.swift */,
 				FA96E2CF20AD152100F95560 /* Main.storyboard */,
 				FA96E2D220AD152200F95560 /* Assets.xcassets */,
@@ -62,6 +65,14 @@
 				FA96E2D720AD152200F95560 /* Info.plist */,
 			);
 			path = "IOS-Swift-CoreAnimationShaking";
+			sourceTree = "<group>";
+		};
+		FA96E2DD20AD1D6600F95560 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FA96E2DE20AD1D9700F95560 /* Extensions.swift */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA96E2CE20AD152100F95560 /* ViewController.swift in Sources */,
+				FA96E2DF20AD1D9700F95560 /* Extensions.swift in Sources */,
 				FA96E2CC20AD152100F95560 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
