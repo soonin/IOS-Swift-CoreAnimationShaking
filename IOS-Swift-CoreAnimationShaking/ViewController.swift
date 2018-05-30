@@ -48,10 +48,10 @@ class ViewController: UIViewController , UITextFieldDelegate {
             cityTextField.shake(horizantaly: 4)
         case 200:
             provinceTextField.customizeTextField()
-            provinceTextField.shake(Veticaly: 4)
+            provinceTextField.shake(Verticaly: 4)
         case 300:
             countryTextField.customizeTextField()
-            countryTextField.shake(horizantaly: 4, Veticaly: 4)
+            countryTextField.shake(horizantaly: 4, Verticaly: 4)
         default:
             //todo
             break

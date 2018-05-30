@@ -11,13 +11,13 @@ import UIKit
 public extension  UITextField {
 
     
-    func shake(horizantaly:CGFloat = 0  , Veticaly:CGFloat = 0) {
+    func shake(horizantaly:CGFloat = 0  , Verticaly:CGFloat = 0) {
         let animation = CABasicAnimation(keyPath: "position")
         animation.duration = 0.05
         animation.repeatCount = 5
         animation.autoreverses = true
-        animation.fromValue = NSValue(cgPoint: CGPoint(x: self.center.x - horizantaly, y: self.center.y - Veticaly ))
-        animation.toValue = NSValue(cgPoint: CGPoint(x: self.center.x + horizantaly, y: self.center.y + Veticaly ))
+        animation.fromValue = NSValue(cgPoint: CGPoint(x: self.center.x - horizantaly, y: self.center.y - Verticaly ))
+        animation.toValue = NSValue(cgPoint: CGPoint(x: self.center.x + horizantaly, y: self.center.y + Verticaly ))
         
         
         self.layer.add(animation, forKey: "position")
